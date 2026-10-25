@@ -1,0 +1,18 @@
+Illustrative stock photos (not photos of any listed business). Shown with the caption "תמונה להמחשה".
+Real photographs, not AI-generated. Licenses allow free commercial use, no attribution required.
+Unsplash License: https://unsplash.com/license   Pexels License: https://www.pexels.com/license/
+
+food/hero.jpg  Cook cutting meat on a rotating spit to prepare shawarma, by Said Khodjaev (Pexels License)
+               https://www.pexels.com/photo/cook-cutting-meat-on-a-rotating-spit-to-prepare-shawarma-16694861/
+               Cropped to landscape 1800x1200.
+food/g1.jpg    Beef shawarma / gyros in pita, by Alexander Mils (Unsplash License)
+               https://unsplash.com/photos/beef-shawarma-SNLfVYmL8os
+food/g2.jpg    Grilled meat on charcoal grill (skewers), by Alex Belogub (Unsplash License)
+               https://unsplash.com/photos/grilled-meat-on-charcoal-grill-pQzdireN2Lc
+food/g3.jpg    A row of tables in a restaurant with lights on the wall, by Daniel / unsplashbydan (Unsplash License)
+               https://unsplash.com/photos/a-row-of-tables-in-a-restaurant-with-lights-on-the-wall-m2MS4zhTMRA
+
+Downloaded 2026-10-25. Resized, cropped and compressed (tools/add_photo.sh); content not otherwise altered.
+
+Fonts in fonts/: Heebo and Frank Ruhl Libre, SIL Open Font License 1.1 (see fonts/OFL-*.txt),
+from https://github.com/google/fonts (ofl/heebo, ofl/frankruhllibre).

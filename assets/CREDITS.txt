@@ -2,9 +2,6 @@ Illustrative stock photos (not photos of any listed business). Shown with the ca
 Real photographs, not AI-generated. Licenses allow free commercial use, no attribution required.
 Unsplash License: https://unsplash.com/license   Pexels License: https://www.pexels.com/license/
 
-food/hero.jpg  Cook cutting meat on a rotating spit to prepare shawarma, by Said Khodjaev (Pexels License)
-               https://www.pexels.com/photo/cook-cutting-meat-on-a-rotating-spit-to-prepare-shawarma-16694861/
-               Cropped to landscape 1800x1200.
 food/g1.jpg    Beef shawarma / gyros in pita, by Alexander Mils (Unsplash License)
                https://unsplash.com/photos/beef-shawarma-SNLfVYmL8os
 food/g2.jpg    Grilled meat on charcoal grill (skewers), by Alex Belogub (Unsplash License)
@@ -16,3 +13,19 @@ Downloaded 2026-10-25. Resized, cropped and compressed (tools/add_photo.sh); con
 
 Fonts in fonts/: Heebo and Frank Ruhl Libre, SIL Open Font License 1.1 (see fonts/OFL-*.txt),
 from https://github.com/google/fonts (ofl/heebo, ofl/frankruhllibre).
+
+Shawarma concepts, photos by ROLE (hunter/concepts_shawarma.py PHOTO_ROLES). Downloaded 2026-10-26
+from Pexels (Pexels License: free for commercial use, no attribution required). None is Unsplash+.
+food/hero.jpg     Shawarma Meat on Fire, by Engin Akyurt (Pexels License)
+                  https://www.pexels.com/photo/shawarma-meat-on-fire-10572741/   8192x5464 -> 2400x1600
+food/wrap.jpg     Close-up of delicious chicken shawarma wrap, by Nano Erdozain (Pexels License)
+                  https://www.pexels.com/photo/close-up-of-delicious-chicken-shawarma-wrap-29306505/   -> 1200x1600
+food/fire.jpg     Preparing food by roasting (skewers over glowing coals), by Sultan Ali (Pexels License)
+                  https://www.pexels.com/photo/preparing-food-by-roasting-11172128/   cropped to landscape 2000x1333
+food/plate.jpg    Delicious food on a tray (shawarma platter), by Murtada Mustafa (Pexels License)
+                  https://www.pexels.com/photo/delicious-food-on-a-tray-7426870/   -> 1400x1750
+food/counter.jpg  Close-up shot of a person slicing a shawarma (gloved hands at the counter), by RDNE Stock project (Pexels License)
+                  https://www.pexels.com/photo/close-up-shot-of-a-person-slicing-a-shawarma-5779372/   cropped to 1200x1600
+                  (replaced Esra Korkmaz, Pexels 24804871, after visual review; moved to data/archive/assets/food/)
+The previous hero (Said Khodjaev, Pexels 16694861) was moved to data/archive/assets/food/.
+Fonts added 2026-10-26: Assistant, David Libre, Bellefair, Karantina, Secular One (SIL OFL 1.1, fonts/OFL-*.txt).

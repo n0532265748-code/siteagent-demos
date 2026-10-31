@@ -2,62 +2,212 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
+<meta name="description" content="המנעולן והמדביר שלי- ג&#x27;וק לי הדברות, מנעולן בראשון לציון. טלפון 052-480-0225.">
+<meta name="theme-color" content="#0F1113">
 <title>המנעולן והמדביר שלי- ג&#x27;וק לי הדברות | מנעולן בראשון לציון</title>
-<style>:root{--c:#334155}
+<style>@font-face{font-family:"Heebo";src:url("../../fonts/Heebo.woff2") format("woff2");font-weight:300 900;font-display:swap}@font-face{font-family:"Frank Ruhl Libre";src:url("../../fonts/FrankRuhlLibre.woff2") format("woff2");font-weight:300 900;font-display:swap}@font-face{font-family:"David Libre";src:url("../../fonts/DavidLibre.ttf") format("truetype");font-weight:300 900;font-display:swap}@font-face{font-family:"Bellefair";src:url("../../fonts/Bellefair.ttf") format("truetype");font-weight:300 900;font-display:swap}@font-face{font-family:"Assistant";src:url("../../fonts/Assistant.ttf") format("truetype");font-weight:300 900;font-display:swap}@font-face{font-family:"Karantina";src:url("../../fonts/Karantina.ttf") format("truetype");font-weight:300 900;font-display:swap}@font-face{font-family:"Secular One";src:url("../../fonts/SecularOne.ttf") format("truetype");font-weight:300 900;font-display:swap}
+:root{--bg:#0F1113;--bg2:#15181B;--card:#1A1D21;--text:#F3F1EC;--muted:#A4A8AC;--accent:#F2A93B;--accent-ink:#17130B;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.18)}
+:root{--display:"Heebo","Assistant",system-ui,sans-serif;--sans:"Assistant","Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{box-sizing:border-box}
-html{font-size:100%}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6;color:#111827;background:#fff}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+section[id]{scroll-margin-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17.5px;line-height:1.7;padding-bottom:80px;-webkit-font-smoothing:antialiased}
+@media (min-width:768px){body{padding-bottom:0}}
 a{color:inherit}
-:focus-visible{outline:3px solid #F59E0B;outline-offset:3px}
-.skip{position:absolute;inset-inline-start:-999px;top:0;background:#111827;color:#fff;padding:.75rem 1rem;z-index:10}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;inset-inline-start:-999px;top:0;background:var(--accent);color:var(--accent-ink);padding:.75rem 1rem;z-index:100}
 .skip:focus{inset-inline-start:0}
-.demo{background:#FEF3C7;color:#78350F;padding:.6rem 1rem;text-align:center;font-size:.95rem}
-.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem}
-.hero{background:var(--c);color:#fff;padding:3rem 0 2.5rem}
-.hero svg{width:3rem;height:3rem;fill:currentColor}
-.hero h1{font-size:clamp(1.8rem,5vw,2.6rem);margin:.5rem 0 .25rem;line-height:1.2}
-.hero p{margin:0 0 .25rem;font-size:1.15rem}
-.ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
-.btn{display:inline-block;min-height:44px;padding:.75rem 1.25rem;border-radius:.5rem;font-weight:700;text-decoration:none;background:#fff;color:var(--c)}
-.btn.alt{background:transparent;color:#fff;border:2px solid #fff}
-main section{padding:2.25rem 0;border-bottom:1px solid #E5E7EB}
-h2{font-size:1.5rem;margin:0 0 1rem;color:var(--c)}
-ul{padding-inline-start:1.25rem;margin:0}
-li{margin:.35rem 0}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1rem;margin:0}
-dt{font-weight:700}
-dd{margin:0}
-footer{padding:2rem 0;font-size:.95rem;color:#374151}
-footer nav a{margin-inline-end:1.25rem}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.i{width:1.1em;height:1.1em;fill:currentColor;flex:none}
+.ltr{direction:ltr;unicode-bidi:isolate}
+.demo{margin:0;font-size:.78rem;color:var(--muted);text-align:center;padding:.45rem 1rem;background:#0A0B0C;border-bottom:1px solid var(--line)}
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(15,17,19,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:1.6rem;min-height:68px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;min-width:0;flex:1}
+.brand svg{width:38px;height:38px;flex:none}
+.brand span{font-family:var(--display);font-size:1.02rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav{display:none;gap:2rem;font-size:.95rem;color:var(--muted)}
+.nav a{text-decoration:none;transition:color .2s}.nav a:hover{color:var(--text)}
+@media (min-width:900px){.nav{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:54px;padding:.8rem 1.6rem;border-radius:10px;font-weight:700;font-size:1.05rem;text-decoration:none;border:1px solid transparent;transition:background .2s,border-color .2s,color .2s,transform .2s,box-shadow .2s}
+.btn-a{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 30px -12px rgba(242,169,59,.7),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-a:hover{transform:translateY(-1px);box-shadow:0 14px 34px -12px rgba(242,169,59,.85),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-o{border-color:var(--line2);background:rgba(255,255,255,.03);color:var(--text)}.btn-o:hover{border-color:var(--accent);color:var(--accent)}
+.btn-sm{min-height:42px;padding:.45rem 1.1rem;font-size:.95rem;border-radius:8px}
+@media (max-width:767px){.top .btn{display:none}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:clamp(2.2rem,6vw,5rem) clamp(3rem,7vw,5.5rem);border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;opacity:.35;-webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);mask-image:linear-gradient(to bottom,#000,transparent 85%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:2.5rem;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:1.25fr 1fr;gap:4rem}}
+.kicker{display:inline-flex;align-items:center;gap:.6rem;margin:0 0 1.3rem;font-size:.98rem;font-weight:600;color:var(--accent)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--accent);border-radius:2px}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,6.4vw,4.1rem);line-height:1.06;letter-spacing:-.015em;margin:0 0 1.3rem;text-wrap:balance;overflow-wrap:anywhere}
+.hero h1 span{display:block}
+.hero h1 .h1b{color:var(--muted);font-weight:600;font-size:.62em;margin-top:.35em;letter-spacing:0}
+.intro{font-size:clamp(1.08rem,2.4vw,1.25rem);color:#C9CCCF;margin:0;max-width:33rem}
+.acts{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.1rem}
+@media (max-width:520px){.acts .btn{flex:1 1 100%}}
+.facts{margin:2.4rem 0 0;padding:0;display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0;border-top:1px solid var(--line)}
+.facts div{padding:1rem 0 0;padding-inline-end:1.6rem;margin-inline-end:1.6rem;border-inline-end:1px solid var(--line)}
+.facts div:last-child{border:0;margin:0;padding-inline-end:0}
+.facts dt{font-size:.8rem;color:var(--muted)}
+.facts dd{margin:0;font-weight:700;font-size:1.05rem;white-space:nowrap}
+.facts a{text-decoration:none}.facts a:hover{color:var(--accent)}
+.stars{display:inline-flex;gap:1px;vertical-align:-1px;margin-inline-start:.35rem}
+.st{width:.85em;height:.85em;fill:var(--accent)}
+@media (max-width:520px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(2){border:0;margin:0}.facts div:last-child{grid-column:1/-1;border-top:1px solid var(--line);margin-top:1rem}}
+/* lock art */
+.art{position:relative;justify-self:center;width:min(100%,430px);aspect-ratio:1/1.05;display:grid;place-items:center;border:1px solid var(--line);border-radius:22px;background:radial-gradient(60% 50% at 50% 46%,rgba(242,169,59,.16),transparent 70%),linear-gradient(180deg,#181B1F,#101214)}
+@media (max-width:959px){.art{width:min(100%,340px);order:-1}}
+@media (max-width:520px){.art{width:min(78%,280px)}}
+.art::before,.art::after{content:"";position:absolute;width:18px;height:18px;border-color:var(--accent);border-style:solid;opacity:.75}
+.art::before{top:14px;inset-inline-start:14px;border-width:2px 0 0;border-inline-start-width:2px}
+.art::after{bottom:14px;inset-inline-end:14px;border-width:0 0 2px;border-inline-end-width:2px}
+.lock{width:78%;height:auto;overflow:visible;filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))}
+.shackle{animation:snap .9s cubic-bezier(.2,.9,.25,1.15) .35s both}
+.glow{animation:glow 1.2s ease-out 1s both}
+@keyframes snap{from{transform:translateY(-34px)}}
+@keyframes glow{from{opacity:0}}
+.art figcaption{position:absolute;bottom:14px;inset-inline-start:18px;font-size:.75rem;color:var(--muted)}
+/* sections */
+.sec{padding-block:clamp(3.5rem,9vw,6.5rem)}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(1.85rem,4.6vw,2.9rem);line-height:1.12;letter-spacing:-.01em;margin:0 0 .9rem;text-wrap:balance}
+.lede{color:var(--muted);margin:0 0 2.6rem;max-width:36rem;font-size:1.08rem}
+.slots{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+@media (min-width:700px){.slots{grid-template-columns:1fr 1fr}}
+.slot{background:var(--bg2);padding:clamp(1.5rem,3.5vw,2.2rem);display:grid;gap:.55rem;align-content:start;transition:background .25s}
+.slot:hover{background:#1A1E22}
+.slot .ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;color:var(--accent);background:rgba(242,169,59,.1);border:1px solid rgba(242,169,59,.25);margin-bottom:.6rem}
+.slot .ic .i{width:24px;height:24px}
+.slot h3{margin:0;font-family:var(--display);font-size:1.3rem;font-weight:700}
+.slot p{margin:0;color:var(--muted)}
+.tag{justify-self:start;margin-top:.5rem;font-size:.78rem;font-weight:700;color:var(--muted);border:1px dashed var(--line2);border-radius:99px;padding:.15rem .7rem}
+.visit{display:grid;gap:2.2rem;align-items:center}
+@media (min-width:900px){.visit{grid-template-columns:1fr 1.1fr;gap:4.5rem}}
+.addr{font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,3.6vw,2rem);margin:0 0 1.8rem}
+.row{display:flex;flex-wrap:wrap;gap:.75rem}
+@media (max-width:520px){.visit .row .btn{flex:1 1 100%}}
+.map{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line);aspect-ratio:4/3}
+.band{position:relative;overflow:hidden;background:linear-gradient(135deg,#1C1F23,#121416);border:1px solid var(--line2);border-radius:20px;padding:clamp(2rem,6vw,3.8rem);display:grid;gap:1.6rem;justify-items:start}
+.band::before{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:6px;background:var(--accent)}
+@media (min-width:900px){.band{grid-template-columns:1fr auto;align-items:center}}
+.band h2{margin:0 0 .3rem}
+.tel{font-family:var(--display);font-size:clamp(2.1rem,7vw,3.4rem);font-weight:800;letter-spacing:.01em;text-decoration:none;direction:ltr;unicode-bidi:isolate;color:var(--accent)}
+footer{border-top:1px solid var(--line);margin-top:clamp(3.5rem,9vw,6rem);padding-block:2.2rem;font-size:.9rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between}
+footer svg{width:40px;height:40px}
+footer nav{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem}
+footer a{text-decoration:none}footer a:hover{color:var(--accent)}
+.mbar{position:fixed;inset-inline:0;bottom:0;z-index:50;display:flex;gap:.6rem;padding:.65rem .8rem calc(.65rem + env(safe-area-inset-bottom));background:rgba(15,17,19,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.mbar .btn{flex:1;min-height:50px}
+.mbar .btn-a{flex:1.4}
+@media (min-width:768px){.mbar{display:none}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">דלג לתוכן הראשי</a>
-<div class="demo" role="note">זהו דף לדוגמה שהכין SiteAgent עבור המנעולן והמדביר שלי- ג&#x27;וק לי הדברות. הפרטים נלקחו מכרטיס העסק בגוגל מפות, ובעל העסק יכול לעדכן אותם.</div>
-<header class="hero"><div class="wrap">
-<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4"/><path d="M12 11h10v2h-2v3h-2v-3h-6z"/></svg>
-<h1>המנעולן והמדביר שלי- ג&#x27;וק לי הדברות</h1>
-<p>מנעולן בראשון לציון</p>
-
-<div class="ctas">
-<a class="btn" href="tel:+972524800225">התקשרו: 052-480-0225</a>
-<a class="btn alt" href="https://wa.me/972524800225">שלחו הודעה בוואטסאפ</a>
-</div>
+<p class="demo">דף לדוגמה שהכין SiteAgent לפי פרטי העסק בגוגל</p>
+<header class="top"><div class="wrap">
+<a class="brand" href="#top"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x=".75" y=".75" width="38.5" height="38.5" rx="10" fill="#1A1D21" stroke="#F2A93B" stroke-opacity=".45" stroke-width="1.5"/><path d="M14 18v-3.2a6 6 0 0 1 12 0V18" fill="none" stroke="#F2A93B" stroke-width="2.6"/><rect x="11" y="18" width="18" height="13" rx="3" fill="#F2A93B"/><circle cx="20" cy="23.2" r="2" fill="#17130B"/><path d="M19.1 24.5h1.8l.5 3.5h-2.8z" fill="#17130B"/></svg><span>המנעולן והמדביר שלי- ג&#x27;וק לי הדברות</span></a>
+<nav class="nav" aria-label="ניווט ראשי"><a href="#preview">באתר המלא</a><a href="#visit">הגעה</a><a href="#contact">יצירת קשר</a></nav>
+<a class="btn btn-a btn-sm" href="tel:+972524800225"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>שיחה עם המנעולן</a>
 </div></header>
 <main id="main">
-<section aria-labelledby="s-services"><div class="wrap"><h2 id="s-services">שירותים</h2><ul><li>פריצת דלתות ללא נזק</li><li>החלפת צילינדרים ומנעולים</li><li>התקנת מנעולים חכמים</li><li>שכפול מפתחות</li><li>פתיחת רכבים וכספות</li></ul></div></section>
-<section aria-labelledby="s-contact"><div class="wrap">
-<h2 id="s-contact">יצירת קשר</h2>
-<dl><dt>טלפון</dt><dd><a href="tel:+972524800225">052-480-0225</a></dd><dt>כתובת</dt><dd>העסיס 13 ראשון לציון</dd><dt>בגוגל מפות</dt><dd><a href="https://www.google.com/maps/place/%D7%94%D7%9E%D7%A0%D7%A2%D7%95%D7%9C%D7%9F+%D7%95%D7%94%D7%9E%D7%93%D7%91%D7%99%D7%A8+%D7%A9%D7%9C%D7%99-+%D7%92%27%D7%95%D7%A7+%D7%9C%D7%99+%D7%94%D7%93%D7%91%D7%A8%D7%95%D7%AA%E2%80%AD/data=!4m7!3m6!1s0x1502b5b960f05a6f:0xdb271db9822148e7!8m2!3d31.9757813!4d34.7831249!16s%2Fg%2F11g3zqn640!19sChIJb1rwYLm1AhUR50ghgrkdJ9s">לכרטיס העסק</a></dd></dl>
+<section class="hero" id="top" aria-labelledby="h-name"><div class="wrap">
+<div>
+<p class="kicker">מנעולן בראשון לציון</p>
+<h1 id="h-name"><span>המנעולן והמדביר שלי-</span> <span class="h1b">ג&#x27;וק לי הדברות</span></h1>
+<p class="intro">נתקעתם מול דלת נעולה? מתקשרים או שולחים הודעה, ומדברים ישירות עם העסק.</p>
+<div class="acts">
+<a class="btn btn-a" href="tel:+972524800225"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>התקשרו עכשיו</a>
+<a class="btn btn-o" href="https://wa.me/972524800225"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>הודעה בוואטסאפ</a>
+</div>
+<dl class="facts">
+<div><dt>דירוג בגוגל</dt><dd><a href="https://www.google.com/maps/place/%D7%94%D7%9E%D7%A0%D7%A2%D7%95%D7%9C%D7%9F+%D7%95%D7%94%D7%9E%D7%93%D7%91%D7%99%D7%A8+%D7%A9%D7%9C%D7%99-+%D7%92%27%D7%95%D7%A7+%D7%9C%D7%99+%D7%94%D7%93%D7%91%D7%A8%D7%95%D7%AA%E2%80%AD/data=!4m7!3m6!1s0x1502b5b960f05a6f:0xdb271db9822148e7!8m2!3d31.9757813!4d34.7831249!16s%2Fg%2F11g3zqn640!19sChIJb1rwYLm1AhUR50ghgrkdJ9s">5.0 מתוך 5<span class="stars" aria-hidden="true"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span></a></dd></div>
+<div><dt>כתובת</dt><dd>העסיס 13 ראשון לציון</dd></div>
+<div><dt>טלפון</dt><dd><a class="ltr" href="tel:+972524800225">052-480-0225</a></dd></div>
+</dl>
+</div>
+<div class="art" aria-hidden="true">
+<svg class="lock" viewBox="0 0 320 380" focusable="false">
+<defs>
+<linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5B6067"/><stop offset=".22" stop-color="#E9ECEF"/><stop offset=".45" stop-color="#8C9298"/><stop offset=".7" stop-color="#D5D9DD"/><stop offset="1" stop-color="#4A4F55"/></linearGradient>
+<linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B4046"/><stop offset=".5" stop-color="#24282C"/><stop offset="1" stop-color="#15181B"/></linearGradient>
+<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="amber" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD089"/><stop offset="1" stop-color="#E08E1B"/></linearGradient>
+<radialGradient id="halo"><stop offset="0" stop-color="#F2A93B" stop-opacity=".55"/><stop offset="1" stop-color="#F2A93B" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="166" cy="362" rx="118" ry="12" fill="#000" opacity=".55"/>
+<g class="shackle">
+<path d="M104 176V112a60 60 0 0 1 120 0v64" fill="none" stroke="#0B0C0E" stroke-width="34" transform="translate(-8 6)"/>
+<path d="M104 176V112a60 60 0 0 1 120 0v64" fill="none" stroke="url(#chrome)" stroke-width="30"/>
+<path d="M96 170V112a68 68 0 0 1 64-67.9" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/>
+</g>
+<rect x="40" y="168" width="236" height="186" rx="30" fill="#0B0C0E" transform="translate(-10 8)"/>
+<rect x="48" y="160" width="236" height="186" rx="30" fill="url(#body)"/>
+<rect x="48" y="160" width="236" height="186" rx="30" fill="url(#face)"/>
+<rect x="48.75" y="160.75" width="234.5" height="184.5" rx="29.25" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="1.5"/>
+<path d="M78 318h176" stroke="#fff" stroke-opacity=".06" stroke-width="2"/><path d="M78 326h176" stroke="#fff" stroke-opacity=".04" stroke-width="2"/>
+<g class="glow">
+<circle cx="166" cy="246" r="62" fill="url(#halo)"/>
+<circle cx="166" cy="246" r="38" fill="none" stroke="url(#amber)" stroke-width="3"/>
+</g>
+<circle cx="166" cy="236" r="16" fill="#08090A"/>
+<path d="M159 244h14l5 34h-24z" fill="#08090A"/>
+<circle cx="161" cy="231" r="4" fill="#fff" opacity=".08"/>
+</svg>
+</div>
 </div></section>
+
+<section class="sec" id="preview" aria-labelledby="h-preview"><div class="wrap">
+<h2 id="h-preview">מה יהיה באתר המלא</h2>
+<p class="lede">את החלקים האלה נכתוב יחד, רק עם פרטים שתאשרו.</p>
+<div class="slots">
+<div class="slot"><span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10V7a5 5 0 0 1 10 0v3h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1zm2 0h6V7a3 3 0 0 0-6 0zm3 3a1.5 1.5 0 0 0-1 2.6V18h2v-2.4a1.5 1.5 0 0 0-1-2.6z"/></svg></span><h3>השירותים שלכם</h3><p>פירוט שירותי המנעולנות שאתם נותנים, בניסוח שלכם.</p><span class="tag">מקום שמור</span></div>
+<div class="slot"><span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span><h3>אזורי שירות</h3><p>הערים והשכונות שאליהן אתם מגיעים, סביב ראשון לציון.</p><span class="tag">מקום שמור</span></div>
+<div class="slot"><span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-2h2zm2.1-7.7-.9.9c-.7.7-1.2 1.3-1.2 2.8h-2v-.5c0-1.1.5-2.1 1.2-2.8l1.2-1.3A2 2 0 1 0 10 8H8a4 4 0 1 1 7.1 1.3z"/></svg></span><h3>שאלות נפוצות</h3><p>תשובות קצרות על זמינות, הגעה ותמחור.</p><span class="tag">מקום שמור</span></div>
+<div class="slot"><span class="ic"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span><h3>מה הלקוחות אומרים</h3><p>רק המלצות אמיתיות שתעבירו לנו, עם אישור הכותבים.</p><span class="tag">מקום שמור</span></div>
+</div>
+</div></section>
+<section class="sec" id="visit" aria-labelledby="h-visit" style="padding-top:0"><div class="wrap visit">
+<div>
+<h2 id="h-visit">איך מגיעים</h2>
+<p class="addr">העסיס 13 ראשון לציון</p>
+<div class="row">
+<a class="btn btn-a" href="https://waze.com/ul?q=%D7%94%D7%A2%D7%A1%D7%99%D7%A1%2013%20%D7%A8%D7%90%D7%A9%D7%95%D7%9F%20%D7%9C%D7%A6%D7%99%D7%95%D7%9F&navigate=yes"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 3 3 10.5l7 2.5 2.5 7z"/></svg>ניווט ב-Waze</a>
+<a class="btn btn-o" href="https://www.google.com/maps/place/%D7%94%D7%9E%D7%A0%D7%A2%D7%95%D7%9C%D7%9F+%D7%95%D7%94%D7%9E%D7%93%D7%91%D7%99%D7%A8+%D7%A9%D7%9C%D7%99-+%D7%92%27%D7%95%D7%A7+%D7%9C%D7%99+%D7%94%D7%93%D7%91%D7%A8%D7%95%D7%AA%E2%80%AD/data=!4m7!3m6!1s0x1502b5b960f05a6f:0xdb271db9822148e7!8m2!3d31.9757813!4d34.7831249!16s%2Fg%2F11g3zqn640!19sChIJb1rwYLm1AhUR50ghgrkdJ9s"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>גוגל מפות</a>
+</div>
+</div>
+<div><svg class="map" viewBox="0 0 400 300" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice">
+<rect width="400" height="300" fill="#15181B"/>
+<g stroke="#2A2E33" fill="none" stroke-linecap="round">
+<path d="M-10 80 L410 52" stroke-width="10"/><path d="M-10 220 L410 238" stroke-width="10"/>
+<path d="M95 -10 L125 310" stroke-width="10"/><path d="M305 -10 L280 310" stroke-width="10"/>
+<path d="M-10 150 L410 146" stroke-width="4"/><path d="M200 -10 L196 310" stroke-width="4"/>
+</g>
+<circle cx="198" cy="148" r="30" fill="#F2A93B" opacity=".14"/>
+<path d="M198 112a17 17 0 0 0-17 17c0 12.5 17 31 17 31s17-18.5 17-31a17 17 0 0 0-17-17zm0 23a6 6 0 1 1 0-12 6 6 0 0 1 0 12z" fill="#F2A93B"/>
+</svg></div>
+</div></section>
+<section id="contact" aria-labelledby="h-contact"><div class="wrap">
+<div class="band">
+<div><h2 id="h-contact">שיחה עם המנעולן</h2><a class="tel" href="tel:+972524800225">052-480-0225</a></div>
+<div class="row">
+<a class="btn btn-a" href="tel:+972524800225"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>התקשרו</a>
+<a class="btn btn-o" href="https://wa.me/972524800225"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>וואטסאפ</a>
+</div></div></div></section>
 </main>
 <footer><div class="wrap">
+<svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x=".75" y=".75" width="38.5" height="38.5" rx="10" fill="#1A1D21" stroke="#F2A93B" stroke-opacity=".45" stroke-width="1.5"/><path d="M14 18v-3.2a6 6 0 0 1 12 0V18" fill="none" stroke="#F2A93B" stroke-width="2.6"/><rect x="11" y="18" width="18" height="13" rx="3" fill="#F2A93B"/><circle cx="20" cy="23.2" r="2" fill="#17130B"/><path d="M19.1 24.5h1.8l.5 3.5h-2.8z" fill="#17130B"/></svg>
 <nav aria-label="קישורים משפטיים"><a href="../../accessibility.html">הצהרת נגישות</a><a href="../../privacy.html">מדיניות פרטיות</a></nav>
-<p>דף לדוגמה שנבנה על ידי SiteAgent.</p>
+<span>דף לדוגמה שנבנה על ידי SiteAgent</span>
 </div></footer>
+<div class="mbar" aria-label="פעולות מהירות"><a class="btn btn-a" href="tel:+972524800225"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>התקשרו</a><a class="btn btn-o" href="https://wa.me/972524800225"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>וואטסאפ</a></div>
 </body>
 </html>
